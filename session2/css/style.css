@@ -1,0 +1,8 @@
+div.myName {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+p {
+    font-size: medium;
+}
