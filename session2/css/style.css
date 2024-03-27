@@ -2,6 +2,10 @@ html {
     text-align: center;
 }
 
+p {
+    font-size: medium;
+}
+
 /* section01 */
 section.s1 {
     display: flex;
@@ -9,7 +13,7 @@ section.s1 {
     margin: 64px;
 }
 
-div.img {
+div.img_s1 {
     margin: 36px 0px 36px 0px;
 }
 
@@ -30,11 +34,34 @@ div.majorBox {
 }
 
 /* section02 */
-div.s2 {
+section.s2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 64px 100px 64px;
+}
+
+/* skills */
+div.img_s2 {
+    margin: 8px;
+}
+div.img_skills {
     display: flex;
     justify-content: space-evenly;
 }
 
-p {
-    font-size: medium;
+/* hobbies */
+div.box_hobby {
+    display: flex;
+    justify-content: flex-start;
+}
+div.img_icon {
+    box-sizing: content-box;
+    width: 36px;
+    height: 36px;
+    
+    padding: 8px;
+}
+div.text_hobby {
+    padding: 8px;
+    text-align: left;
 }
