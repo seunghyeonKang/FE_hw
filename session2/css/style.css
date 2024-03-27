@@ -1,0 +1,84 @@
+html {
+    text-align: center;
+    background-color: #F9F7F7;
+}
+
+p {
+    font-size: medium;
+}
+
+hr {
+    width: 1080px;
+    border: 0.5px solid #112D4E;;
+}
+
+/* section01 */
+section.s1 {
+    display: flex;
+    justify-content: center;
+    margin: 64px 0px 100px 0px;
+}
+
+div.img_s1 {
+    margin: 36px 0px 36px 0px;
+}
+
+div.major {
+    display: flex;
+    justify-content: space-evenly;
+}
+div.majorBox {
+    box-sizing: content-box;
+    padding: 4px 16px 4px 16px;
+    margin: 4px 8px 4px 8px;
+
+    background-color: #DBE2EF;
+    border-radius: 100px;
+    border: 1px solid #112D4E;
+
+    font-size: small;
+}
+
+/* section02 */
+section.s2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 64px 100px 64px;
+}
+
+/* skills */
+div.img_s2 {
+    margin: 8px;
+}
+div.img_skills {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* hobbies */
+div.box_hobby {
+    display: flex;
+    justify-content: flex-start;
+}
+div.img_icon {
+    box-sizing: content-box;
+    width: 36px;
+    height: 36px;
+    
+    padding: 8px;
+}
+div.text_hobby {
+    padding: 8px;
+    text-align: left;
+}
+
+/* section03 */
+section.s3 {
+    display: flex;
+    justify-content: center;
+    margin: 64px;
+}
+
+div.box_project {
+    margin: 32px;
+}
