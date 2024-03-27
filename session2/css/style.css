@@ -1,4 +1,36 @@
-div.myName {
+html {
+    text-align: center;
+}
+
+/* section01 */
+section.s1 {
+    display: flex;
+    justify-content: center;
+    margin: 64px;
+}
+
+div.img {
+    margin: 36px 0px 36px 0px;
+}
+
+div.major {
+    display: flex;
+    justify-content: space-evenly;
+}
+div.majorBox {
+    box-sizing: content-box;
+    padding: 4px 16px 4px 16px;
+    margin: 4px 8px 4px 8px;
+
+    background-color: #DBE2EF;
+    border-radius: 100px;
+    border: 2px solid #112D4E;
+
+    font-size: small;
+}
+
+/* section02 */
+div.s2 {
     display: flex;
     justify-content: space-evenly;
 }
