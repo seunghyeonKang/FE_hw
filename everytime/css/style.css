@@ -71,25 +71,31 @@ body {
     justify-content: space-evenly;
   }
   div.sub_menus {
-    padding: 0px 24px;
-    margin: 24px;
+    padding: 0px;
+    margin: 12px;
   }
   div.sub_menus_left {
     border-left: 1px solid gray;
-    padding: 0px 24px;
-    margin: 24px;
+    padding: 0px 0px 0px 16px;
+    margin: 12px;
   }
   div.sub_menus_right {
     border-right: 1px solid gray;
-    padding: 0px 24px;
-    margin: 24px;
+    padding: 0px 16px 0px 0px;
+    margin: 12px;
   }
   
   p.sub_menu {
     font-size: 0.8rem;
+    margin: 8px 0px;
   }
   
   p.sub_menu_picked {
+    font-size: 0.8rem;
+    color: crimson;
+    font-weight: 900;
+  }
+  p.sub_menu_more {
     font-size: 0.8rem;
     color: crimson;
     font-weight: 900;
@@ -129,6 +135,8 @@ body {
   }
   div.img_icon_board {
     margin: 12px;
+    width: 24px;
+    height: 24px;
   }
   img.img_icon_board {
     width: 24px;
@@ -144,7 +152,28 @@ body {
     margin: 0;
     font-size: 0.8rem;
   }
+  div.box_text_red {
+    padding: 12px;
+    margin: 12px 4px;
+    background-color: rgb(255, 234, 234);
+    border-radius: 12px;
+  }
+  span.text_emphasis {
+    color: crimson;
+    font-weight: 600;
+  }
   
+  section.board_background_color{
+    width: 780px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+  }
+  p.text_writing {
+    margin: 12px;
+    font-size: 1rem;
+  }
+
   /* aside */
   section.aside {
     width: 320px;
