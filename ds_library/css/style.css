@@ -27,8 +27,7 @@ p.text_nav01 {
   margin: 12px 4px;
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 /* div(검색바) */
@@ -48,5 +47,30 @@ img.img_banner {
 nav.box_background {
   background-color: #f3f3f3;
 }
+div.box_nav02 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 32px 12px;
+}
+div.img_nav02 {
+  margin: 6px;
+  width: 72px;
+}
+img.img_nav02 {
+  width: 72px;
+}
+
+p.text_nav02 {
+  font-size: 0.8rem;
+  font-weight: 900;
+  margin: 6px;
+}
 
 /* section */
+/* section left */
+/* section right */
+/* 570
+430 */
