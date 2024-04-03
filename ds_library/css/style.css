@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+}
+div.box_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.box_size_1188 {
+  width: 1188px;
+}
+
+/* header */
+header.box_between,
+div.box_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.box_margin_8 {
+  margin: 8px;
+}
+/* header_logo */
+div.img_logo {
+  padding: 12px;
+  width: 260px;
+}
+img.img_logo {
+  width: 260px;
+}
+/* header_nav */
+nav.box_evenly,
+div.box_evenly,
+section.box_evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+p.text_nav01 {
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 12px;
+  margin: 12px 4px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* div(검색바) */
+div.img_banner_main {
+  height: 275px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+img.img_banner_main {
+  max-width: 100%;
+}
+/* div.img_ {
+  position: relative;
+}
+img.img_ {
+  width: 608px;
+} */
+
+/* navigation */
+nav.box_background {
+  background-color: #f3f3f3;
+}
+div.box_nav02 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 32px 12px;
+}
+div.img_nav02 {
+  margin: 6px;
+  width: 72px;
+}
+img.img_nav02 {
+  width: 72px;
+}
+
+p.text_nav02 {
+  font-size: 0.8rem;
+  font-weight: 900;
+  margin: 6px;
+}
+
+/* section */
+section.box_size_570 {
+  width: 570px;
+  margin: 12px;
+}
+div.box_margin_52 {
+  margin: 52px;
+}
+
+/* section left_top */
+div.box_border_bottom_black {
+  border-bottom: 1px solid #333333;
+}
+
+div.box_margin_0_36 {
+  margin: 0px 36px;
+}
+img.img_icon_22 {
+  width: 22px;
+  height: 22px;
+}
+h2.text_16r_9w {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+h2.text_14r_4w {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+span.text_color_Primary_light {
+  color: #e888a5;
+}
+h2.text_margin_12T0R12B0L {
+  margin: 12px 0px;
+}
+
+p.text_08r_4w {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+span.text_color_99,
+p.text_color_99 {
+  color: #999999;
+}
+p.text_margin_8top {
+  margin: 8px 0px 0px 0px;
+}
+
+/* section left_section */
+div.box_border_bottom_gray {
+  border-bottom: 1px solid #cccccc;
+}
+div.box_padding_8 {
+  padding: 8px 24px;
+}
+p.text_10r_4w {
+  font-size: 1rem;
+  font-weight: 400;
+}
+p.text_margin_2 {
+  margin: 2px;
+}
+
+/* section right */
+img.img_banner_move {
+  width: 570px;
+  height: 430px;
+}
