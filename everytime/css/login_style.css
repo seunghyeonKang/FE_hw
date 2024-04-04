@@ -1,17 +1,16 @@
 body {
   margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box_evenly {
   display: flex;
   justify-content: space-evenly;
 }
-.box_out {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-evenly; */
-  align-items: center;
-}
-.box_in {
+.box_contents {
   width: 364px;
 }
 
