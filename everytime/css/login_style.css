@@ -33,11 +33,11 @@ body {
   border-radius: 10px;
   border: none;
   margin: 2px;
+  outline: none;
 }
 .input_text {
   font-size: 1rem;
 
-  color: #acacac;
   padding: 10px;
 }
 .input_box_color {
