@@ -170,7 +170,7 @@ img.img_banner_move {
 }
 
 /* footer */
-footer.box_ {
+footer.box_footer {
   background-color: #1e1e1e;
   margin: 0;
   height: 100px;
@@ -182,4 +182,15 @@ p.text_09r_4w {
   font-size: 0.9rem;
   font-weight: 400;
   color: #ffffff;
+}
+
+/* top button */
+div.button_fix {
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+}
+img.img_top {
+  width: 62px;
+  height: 67px;
 }
