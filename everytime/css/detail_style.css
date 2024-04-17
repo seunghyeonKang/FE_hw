@@ -437,3 +437,154 @@ div.artc {
   width: 183px;
   height: 183px;
 }
+
+/* artc_icons */
+.artc_icons_container {
+  padding: 0;
+  margin: 15px 0px;
+}
+.artc_icons {
+  display: flex;
+  justify-content: flex-start;
+}
+.artc_icons .imgBox_icons {
+  padding: 0;
+  margin: 0px 8px;
+  width: 12px;
+  height: 12px;
+}
+.artc_icons .imgBox_icons:first-child {
+  padding: 0;
+  margin: 0px 8px 0px 0px;
+  width: 12px;
+  height: 12px;
+}
+.artc_icons .img_icons {
+  width: 12px;
+  height: 12px;
+}
+.artc_icons p {
+  padding: 0;
+  margin: 2px 2px 2px -4px;
+
+  font-size: 0.8rem;
+}
+.artc_icons p.icon01 {
+  color: #f91f15;
+}
+.artc_icons p.icon02 {
+  color: #05cce1;
+}
+.artc_icons p.icon03 {
+  color: #ffc900;
+}
+
+/* article_buttons */
+.artc_buttons_container {
+  display: flex;
+  justify-content: flex-start;
+}
+.artc_buttons {
+  display: flex;
+  justify-content: flex-start;
+
+  padding: 4px 12px;
+  margin: 0px 4px 0px 0px;
+  border-radius: 8px;
+
+  background-color: #f6f6f6;
+}
+
+.artc_buttons .imgBox_icons {
+  padding: 0;
+  margin: 0;
+  width: 12px;
+  height: 12px;
+}
+.artc_buttons .img_icons {
+  width: 12px;
+  height: 12px;
+}
+.artc_buttons p {
+  padding: 0;
+  margin: 2px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: #737373;
+}
+
+/* comment */
+
+.artc_comment_container {
+}
+.artc_comment_profile {
+  display: flex;
+  justify-content: flex-start;
+}
+.imgBox_comment_profile {
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+.img_comment_profile {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+.artc_comment_profile h4 {
+  padding: 0;
+  margin: 2px 6px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.artc_comment_container p {
+  padding: 0;
+  margin: 5px 0px;
+
+  font-size: 0.9rem;
+}
+.artc_comment_container p.text_info {
+  padding: 0;
+  margin: 5px 0px 0px 0px;
+
+  font-size: 0.7rem;
+  color: #737373;
+}
+
+/* writing */
+.artc_writing {
+  width: 780px;
+  border: 0.5px solid #d6d6d6;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+.artc input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px, 10px, 10px, 10px;
+
+  width: 728px;
+  height: 40px;
+
+  border: none;
+  padding: 0;
+  outline: none;
+  font-size: 0.85rem;
+
+  background-color: #f8f8f8;
+  background-color: #c41515;
+}
+.artc input.img_writing_button {
+  background-image: url("../img/container.articles.write.submit.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #f91f15;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
