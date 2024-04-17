@@ -338,11 +338,13 @@ p.footer {
 /* article */
 article.artc {
   width: 780px;
-  border: 0.5px solid #d6d6d6;
+  /* border: 0.5px solid #d6d6d6; */
+  border: 0.5px solid #e6e6e6;
 }
 div.artc {
   width: 780px;
-  border: 0.5px solid #d6d6d6;
+  /* border: 0.5px solid #d6d6d6; */
+  border: 0.5px solid #e6e6e6;
   padding: 15px;
 }
 
@@ -558,25 +560,34 @@ div.artc {
 /* writing */
 .artc_writing {
   width: 780px;
-  border: 0.5px solid #d6d6d6;
+  /* border: 0.5px solid #d6d6d6; */
+  border: 0.5px solid #e6e6e6;
+  margin: 0;
   padding: 0;
   background-color: #f8f8f8;
 }
-.artc input {
-  box-sizing: border-box;
+.artc_writing form {
   margin: 0;
-  padding: 10px, 10px, 10px, 10px;
+  padding: 0;
+  border: none;
+  outline: none;
 
-  width: 728px;
-  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.artc input.input_write_comment {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+
+  width: 718px;
+  height: 20px;
 
   border: none;
-  padding: 0;
   outline: none;
   font-size: 0.85rem;
 
   background-color: #f8f8f8;
-  background-color: #c41515;
 }
 .artc input.img_writing_button {
   background-image: url("../img/container.articles.write.submit.png");
@@ -584,7 +595,42 @@ div.artc {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #f91f15;
+
+  margin: 0;
+  padding: 0;
   width: 40px;
   height: 40px;
   border: none;
+}
+
+/* go back page */
+div.button_back {
+  margin: 4px;
+  padding: 6px;
+
+  width: 82px;
+  height: 36px;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  border: 1px solid #f91f15;
+  border-radius: 4px;
+}
+div.img_button_back {
+  margin: 0;
+  padding: 0;
+}
+div.img_button_back img {
+  width: 12px;
+  height: 12px;
+}
+
+.button_back p {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0.85rem;
+  color: #f91f15;
+  font-weight: 900;
 }
