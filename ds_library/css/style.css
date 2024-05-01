@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  min-width: 380px;
 }
 div.box_center {
   display: flex;
@@ -61,7 +62,7 @@ div.box_img_banner_main {
 img.img_banner_main {
   max-width: 100%;
 }
-div.box_img_ {
+div.box_img_search {
   margin-top: -194px;
   margin-bottom: 82px;
 
@@ -69,7 +70,7 @@ div.box_img_ {
   justify-content: center;
   align-items: center;
 }
-img.img_ {
+img.img_search {
   width: 608px;
   height: 112px;
 }
@@ -193,4 +194,68 @@ div.button_fix {
 img.img_top {
   width: 62px;
   height: 67px;
+}
+
+/* 반응형 - 1250px */
+@media (min-width: 1250px) {
+  header nav.box_end {
+    display: none;
+  }
+}
+/* 반응형 - 1250px */
+@media (max-width: 1250px) {
+  /* hidden */
+  header .box_evenly {
+    display: none;
+  }
+  /* box_size */
+  div.box_size_1188 {
+    width: 98vw;
+    height: 90px;
+  }
+  /* nav_icons */
+  header nav div.nav_icons {
+    height: 28px;
+    padding: 0;
+    margin: 8px;
+  }
+  header nav img.nav_icons {
+    height: 28px;
+  }
+  .box_end {
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* nav02 */
+  div.nav02_box_size {
+    width: 98vw;
+    height: 198px;
+  }
+  div.nav02_box_wrap {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  div.box_nav02 {
+    margin: 12px 12px;
+  }
+}
+
+/* 반응형 - 1000px */
+@media (max-width: 1000px) {
+}
+/* nav02 */
+nav.box_background {
+  height: 198px;
+}
+
+/* 반응형 - 680px */
+@media (max-width: 680px) {
+  /* search */
+  div.box_img_search {
+    height: 113px;
+  }
+  img.img_search {
+    width: 90vw;
+  }
 }
