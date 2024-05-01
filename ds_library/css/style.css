@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  min-width: 380px;
+  min-width: 550px;
 }
 div.box_center {
   display: flex;
@@ -241,12 +241,16 @@ img.img_top {
   }
 }
 
-/* 반응형 - 1000px */
-@media (max-width: 1000px) {
-}
-/* nav02 */
-nav.box_background {
-  height: 198px;
+/* 반응형 - 975px */
+@media (max-width: 975px) {
+  /* nav02 */
+  nav.box_background {
+    height: 300px;
+  }
+  /* section */
+  section.box_size_570:nth-child(1) {
+    display: none;
+  }
 }
 
 /* 반응형 - 680px */
@@ -257,5 +261,6 @@ nav.box_background {
   }
   img.img_search {
     width: 90vw;
+    height: auto;
   }
 }
