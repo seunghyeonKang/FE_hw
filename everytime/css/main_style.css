@@ -104,20 +104,33 @@ div.sub_menus_right {
 }
 
 p.sub_menu {
+  width: 100px;
+  height: 25px;
+  padding: 0;
+  margin: 0px;
+
   font-size: 0.8rem;
-  margin: 8px 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  /* 질문 */
+  text-overflow: ellipsis;
+
+  display: flex;
+  align-items: center;
 }
 
-p.sub_menu_picked {
-  font-size: 0.8rem;
-  color: crimson;
-  font-weight: 900;
-}
+p.sub_menu_red {
+  width: 100px;
+  height: 25px;
+  padding: 0;
+  margin: 0px;
 
-p.sub_menu_more {
   font-size: 0.8rem;
-  color: crimson;
+  color: #f91f15;
   font-weight: 900;
+
+  display: flex;
+  align-items: center;
 }
 
 /* section & aside */
@@ -324,4 +337,93 @@ footer {
 p.footer {
   margin: 24px;
   text-align: center;
+}
+
+/* 반응형 - 1154px */
+@media (max-width: 1154px) {
+}
+/* navigation */
+nav.outside {
+  display: flex;
+  justify-content: flex-start;
+
+  padding: 15px;
+  margin: 0;
+
+  background-color: #f2f2f2;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+}
+nav.inside {
+  width: 1148px;
+  display: flex;
+  justify-content: start;
+
+  padding: 0;
+  margin: 0;
+}
+div.sub_menus {
+  box-sizing: border-box;
+  width: 130px;
+  height: 200px;
+
+  padding: 0 15px;
+  margin: 0;
+}
+div.sub_menus_left {
+  box-sizing: border-box;
+  width: 130px;
+  height: 200px;
+
+  padding: 0 15px;
+  margin: 0;
+
+  border-left: 1px solid #e3e3e3;
+}
+div.sub_menus_right {
+  box-sizing: border-box;
+  width: 130px;
+  height: 200px;
+
+  padding: 0 15px;
+  margin: 0;
+
+  border-right: 1px solid #e3e3e3;
+}
+
+/* 반응형 - 1154px */
+@media (min-width: 640px) {
+  /* hidden */
+  header.media_640px {
+    display: none;
+  }
+}
+/* 반응형 - 640px */
+@media (max-width: 640px) {
+  /* hidden */
+  header.outside {
+    display: none;
+  }
+  /* nav */
+  header.media_640px {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  header.media_640px div {
+    width: 22px;
+    height: 22px;
+    padding: 14px;
+    margin: 0;
+  }
+  header.media_640px img {
+    width: 22px;
+    height: auto;
+  }
+  header.media_640px h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 0 2px 0;
+  }
 }
