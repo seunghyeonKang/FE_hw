@@ -16,13 +16,17 @@ header.outside {
 header.inside {
   width: 1148px;
   display: flex;
-  justify-content: space-evenly;
+  margin: 0 30px;
+  justify-content: space-between;
   align-items: center;
+  overflow-x: hidden;
+  /* 왼쪽 기준 */
 }
 
 div.title {
   display: flex;
   justify-content: space-evenly;
+  white-space: nowrap;
 }
 
 div.img_logo {
@@ -48,6 +52,7 @@ h2.title_text {
 div.menus {
   display: flex;
   justify-content: space-evenly;
+  white-space: nowrap;
 }
 
 h3 {
