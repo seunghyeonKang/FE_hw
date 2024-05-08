@@ -5,12 +5,15 @@ body {
 
 hr {
   margin: 0;
+  border: 0.5px solid #d6d6d6;
 }
 
 /* header */
 header.outside {
   display: flex;
   justify-content: center;
+  /* 수정 필요 */
+  /* position: fixed; */
 }
 
 header.inside {
@@ -70,12 +73,16 @@ div.icons {
 }
 
 div.img_icon {
-  padding: 12px;
-  margin: 12px;
+  padding: 8px;
+  margin: 12px 2px;
   width: 24px;
   height: 24px;
   border: 1px solid rgb(205, 205, 205);
-  border-radius: 8px;
+  border-radius: 12px;
+}
+img.img_icon {
+  width: 24px;
+  height: 24px;
 }
 
 /* navigation */
@@ -89,8 +96,11 @@ nav.outside {
 
 nav.inside {
   width: 1148px;
+
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 div.sub_menus {
@@ -151,6 +161,10 @@ div.body_inside {
   width: 1148px;
   display: flex;
   /* justify-content: flex-start; */
+
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: hidden;
 }
 
 div.board,
@@ -161,7 +175,7 @@ aside {
 /* section */
 /* s1 */
 section {
-  border: 1px solid gray;
+  border: 1px solid #d6d6d6;
   margin: 6px 0px;
 }
 section.board_background_color {
@@ -281,6 +295,7 @@ div.box_margin0 {
   margin: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* aside */
@@ -362,13 +377,11 @@ p.footer {
   text-align: center;
 }
 
-/* 반응형 - 1154px */
-@media (max-width: 1154px) {
-}
+/* 추가 수정본 */
 /* navigation */
 nav.outside {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 
   padding: 15px;
   margin: 0;
@@ -379,8 +392,11 @@ nav.outside {
 }
 nav.inside {
   width: 1148px;
+
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 
   padding: 0;
   margin: 0;
@@ -413,14 +429,33 @@ div.sub_menus_right {
 
   border-right: 1px solid #e3e3e3;
 }
-
 /* 반응형 - 1154px */
+@media (max-width: 1154px) {
+}
+
+/* 반응형 - 958px */
+@media (max-width: 958px) {
+  nav.inside {
+    width: 1148px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: hidden;
+
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* 반응형 - 640px - up */
 @media (min-width: 640px) {
   /* hidden */
   header.media_640px {
     display: none;
   }
 }
+
 /* 반응형 - 640px */
 @media (max-width: 640px) {
   /* nav */
