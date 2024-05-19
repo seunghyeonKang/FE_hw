@@ -73,5 +73,8 @@ h2 {
   padding: 10px;
 }
 .input_button_color {
+  background-color: #cecece;
+}
+.input_button_color.on {
   background-color: #f91f15;
 }
