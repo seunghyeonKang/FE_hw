@@ -39,3 +39,5 @@ formNickname.addEventListener("input", validation);
 formEmail.addEventListener("input", validation);
 formPassword.addEventListener("input", validation);
 formRePassword.addEventListener("input", validation);
+
+validation();
