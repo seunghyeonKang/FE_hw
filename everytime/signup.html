@@ -21,6 +21,7 @@
           <div class="box_margin">
             <p class="input_name_text">이름</p>
             <input
+              id="formName"
               class="input_box input_text input_box_color"
               type="text"
               placeholder="이름을 입력하세요."
@@ -29,6 +30,7 @@
           <div class="box_margin">
             <p class="input_name_text">닉네임</p>
             <input
+              id="formNickname"
               class="input_box input_text input_box_color"
               type="text"
               placeholder="닉네임을 입력하세요."
@@ -37,6 +39,7 @@
           <div class="box_margin">
             <p class="input_name_text">이메일</p>
             <input
+              id="formEmail"
               class="input_box input_text input_box_color"
               type="text"
               placeholder="이메일을 입력하세요."
@@ -45,28 +48,33 @@
           <div class="box_margin">
             <p class="input_name_text">비밀번호</p>
             <input
+              id="formPassword"
               class="input_box input_text input_box_color"
-              type="text"
+              type="password"
               placeholder="숫자/문자 조합, 최소 8자 이상"
             />
           </div>
           <div class="box_margin">
             <p class="input_name_text">비밀번호 재입력</p>
             <input
+              id="formRePassword"
               class="input_box input_text input_box_color"
-              type="text"
+              type="password"
               placeholder="비밀번호를 재입력하세요."
             />
           </div>
           <div class="box_margin">
             <input
+              id="formSubmit"
               class="input_box input_button_text input_button_color"
-              type="button"
+              type="submit"
               value="회원가입"
             />
           </div>
         </form>
       </div>
     </div>
+
+    <script src="./js/signup.js"></script>
   </body>
 </html>
