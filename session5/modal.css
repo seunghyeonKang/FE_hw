@@ -18,7 +18,7 @@
   /* hidden */
   display: none;
 }
-.modal_wrap {
+.modal_content {
   border: 1px solid #aaa;
   box-shadow: 0 0 5px #aaa;
   border-radius: 20px;
@@ -50,7 +50,7 @@
   left: 20px;
 }
 
-.modal_wrap.show-modal {
+.modal_content.show-modal {
   display: block;
 }
 .modal_background.show-modal {

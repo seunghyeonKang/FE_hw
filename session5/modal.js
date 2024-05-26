@@ -1,20 +1,14 @@
-const modal_wrap = document.querySelector(".modal_wrap");
-const modal_background = document.querySelector(".modal_background");
+const modalContent = document.querySelector(".modal_content");
+const modalBackground = document.querySelector(".modal_background");
 
-document.querySelector("#modal_btn").addEventListener("click", () => {
-  open();
-});
+document.querySelector("#modal_btn").addEventListener("click", openModal);
+document.querySelector(".modal_close").addEventListener("click", closeModal);
 
-document.querySelector(".modal_close").addEventListener("click", () => {
-  close();
-});
-
-function close() {
-  modal_wrap.classList.remove("show-modal");
-  modal_background.classList.remove("show-modal");
+function openModal() {
+  modalContent.classList.add("show-modal");
+  modalBackground.classList.add("show-modal");
 }
-
-function open() {
-  modal_wrap.classList.add("show-modal");
-  modal_background.classList.add("show-modal");
+function closeModal() {
+  modalContent.classList.remove("show-modal");
+  modalBackground.classList.remove("show-modal");
 }
