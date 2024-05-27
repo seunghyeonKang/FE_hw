@@ -1,11 +1,13 @@
-// # 1
+// 총 점수 : 5/8
+
+// # 1 (O)
 /*
 lion = () => {
   return "Hello LikeLion12";
 };
 */
 
-// # 2
+// # 2 (X) -> 삼항 연산자를 사용해주세요.
 /*
 let input = prompt("숫자를 입력해주세요!");
 
@@ -20,7 +22,7 @@ if (number % 2 == 0) {
 }
 */
 
-// # 3
+// # 3 (O)
 /*
 let numQ3;
 do {
@@ -28,29 +30,29 @@ do {
 } while (numQ3 <= 100);
 */
 
-// # 4
+// # 4 (O)
 /*
 let str = prompt("문자열을 입력하세요:");
 let str02 = str.split("i");
 console.log(str02[1]);
 */
 
-// # 5
+// # 5 (O)
 /*
 let dateQ5 = new Date("May 27, 2022 12:30:00");
 alert(dateQ5);
 */
 
-// # 6??
+// # 6 (X)
 /*
 function getSecondsToday() {
-    const now = new Date();
-    return alert(now.getSeconds);
+  const now = new Date();
+  return alert(now.getSeconds);
 }
 getSecondsToday();
 */
 
-// # 7
+// # 7 (O)
 /*
 function randomNum() {
   document.write(`첫번째 랜덤 난수 : ${Math.floor(Math.random() * 100)}`);
@@ -60,7 +62,7 @@ function randomNum() {
 randomNum();
 */
 
-// # 8
+// # 8(X)
 
 function change() {
   const name = document.getElementById("name");
