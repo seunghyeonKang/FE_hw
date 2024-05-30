@@ -522,8 +522,6 @@ div.artc {
 
 /* comment */
 
-.artc_comment_container {
-}
 .artc_comment_profile {
   display: flex;
   justify-content: flex-start;
@@ -558,6 +556,28 @@ div.artc {
   margin: 5px 0px 0px 0px;
 
   font-size: 0.7rem;
+  color: #737373;
+}
+
+#comment_anonymity {
+  /* border: none; */
+}
+#comment_anonymity .imgBox_icons {
+  padding: 0;
+  margin: 0;
+  width: 12px;
+  height: 12px;
+}
+#comment_anonymity .img_icons {
+  width: 12px;
+  height: 12px;
+}
+#comment_anonymity p {
+  padding: 0;
+  margin: 2px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
   color: #737373;
 }
 
