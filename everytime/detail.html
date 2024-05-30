@@ -254,15 +254,23 @@
             <!-- comment01 -->
             <div class="artc">
               <div class="artc_comment_container">
-                <div class="artc_comment_profile">
-                  <div class="imgBox_comment_profile">
-                    <img
-                      class="img_comment_profile"
-                      src="./img/anonymous.profile.png"
-                      alt="이미지"
-                    />
+                <div class="artc_comment_top">
+                  <div class="artc_comment_profile">
+                    <div class="imgBox_comment_profile">
+                      <img
+                        class="img_comment_profile"
+                        src="./img/anonymous.profile.png"
+                        alt="이미지"
+                      />
+                    </div>
+                    <h4>익명1</h4>
                   </div>
-                  <h4>익명1</h4>
+                  <div class="artc_comment_right">
+                    <button id="comments_comment">대댓글</button>
+                    <button>공감</button>
+                    <button>쪽지</button>
+                    <button>신고</button>
+                  </div>
                 </div>
                 <p>우와</p>
                 <p class="text_info">30분 전</p>
@@ -271,15 +279,23 @@
             <!-- comment02 -->
             <div class="artc">
               <div class="artc_comment_container">
-                <div class="artc_comment_profile">
-                  <div class="imgBox_comment_profile">
-                    <img
-                      class="img_comment_profile"
-                      src="./img/anonymous.profile.png"
-                      alt="이미지"
-                    />
+                <div class="artc_comment_top">
+                  <div class="artc_comment_profile">
+                    <div class="imgBox_comment_profile">
+                      <img
+                        class="img_comment_profile"
+                        src="./img/anonymous.profile.png"
+                        alt="이미지"
+                      />
+                    </div>
+                    <h4>익명2</h4>
                   </div>
-                  <h4>익명2</h4>
+                  <div class="artc_comment_right">
+                    <button id="comments_comment">대댓글</button>
+                    <button>공감</button>
+                    <button>쪽지</button>
+                    <button>신고</button>
+                  </div>
                 </div>
                 <p>와우</p>
                 <p class="text_info">방금</p>
@@ -287,20 +303,18 @@
             </div>
             <!-- write comment -->
             <div class="artc_writing">
-              <form>
+              <div>
                 <input
                   class="input_write_comment"
                   type="text"
                   placeholder="댓글을 입력하세요."
                 />
                 <button id="comment_anonymity">
-                  <div class="imgBox_icons">
-                    <img class="img_icons" src="./img/" alt="아이콘" />
-                  </div>
-                  <p class="icon01">익명</p>
+                  <input type="checkbox" id="comment_anonymity_check" />
+                  <label for="comment_anonymity_check">익명</label>
                 </button>
                 <input class="img_writing_button" type="submit" value="" />
-              </form>
+              </div>
             </div>
           </article>
           <!-- go back page -->

@@ -521,6 +521,11 @@ div.artc {
 }
 
 /* comment */
+.artc_comment_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .artc_comment_profile {
   display: flex;
@@ -544,6 +549,10 @@ div.artc {
   font-size: 0.8rem;
   font-weight: 900;
 }
+.artc_comment_right {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .artc_comment_container p {
   padding: 0;
@@ -559,8 +568,30 @@ div.artc {
   color: #737373;
 }
 
+.artc_comment_right button {
+  border: none;
+  background: none;
+
+  color: #b4b4b4;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+#comment_anonymity_check:checked {
+  accent-color: #f91f15;
+}
+
 #comment_anonymity {
-  /* border: none; */
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 40px;
+
+  border: none;
+  background: none;
 }
 #comment_anonymity .imgBox_icons {
   padding: 0;
@@ -580,6 +611,14 @@ div.artc {
   font-weight: 900;
   color: #737373;
 }
+#comment_anonymity label {
+  color: #a6a6a6;
+  font-weight: 900;
+}
+#comment_anonymity.text-red label {
+  color: #f91f15;
+  font-weight: 900;
+}
 
 /* writing */
 .artc_writing {
@@ -590,7 +629,7 @@ div.artc {
   padding: 0;
   background-color: #f8f8f8;
 }
-.artc_writing form {
+.artc_writing div {
   margin: 0;
   padding: 0;
   border: none;
