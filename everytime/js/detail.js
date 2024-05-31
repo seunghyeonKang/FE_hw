@@ -35,12 +35,6 @@ function articleScrabClicked() {
   isScrabed = !isScrabed;
 }
 
-// 대댓글
-const commentsComment = document.getElementById("comments_comment");
-commentsComment.addEventListener("click", () => {
-  console.log("대댓 클릭");
-});
-
 // 익명
 const commentAnonymity = document.querySelector("#comment_anonymity");
 
@@ -59,4 +53,32 @@ function onOffAnonymity() {
   isAnonymous = !isAnonymous;
 }
 
+// 대댓글
+const commentsCommentBTN = document.querySelectorAll(".comments_comment");
+
+commentsCommentBTN.forEach((button) => {
+  button.addEventListener("click", () => {
+    const parentArtc = button.closest(".artc");
+    const commentsCommentWrite = parentArtc.querySelector(
+      ".comments_comment_writing"
+    );
+
+    if (commentsCommentWrite.style.display == "block") {
+      commentsCommentWrite.style.display = "none";
+    } else {
+      commentsCommentWrite.style.display = "block";
+    }
+  });
+});
+
 // 댓글 작성
+const commentSubmit = document.querySelectorAll(".img_writing_button");
+
+commentSubmit.forEach((button) => {
+  button.addEventListener("click", () => {
+    const parentArtc = button.closest(".artc_writing");
+    const commentContent = parentArtc.querySelector(".input_write_comment");
+    alert(commentContent.Value);
+    console.log(commentContent);
+  });
+});

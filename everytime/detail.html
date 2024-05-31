@@ -266,7 +266,7 @@
                     <h4>익명1</h4>
                   </div>
                   <div class="artc_comment_right">
-                    <button id="comments_comment">대댓글</button>
+                    <button class="comments_comment">대댓글</button>
                     <button>공감</button>
                     <button>쪽지</button>
                     <button>신고</button>
@@ -274,6 +274,50 @@
                 </div>
                 <p>우와</p>
                 <p class="text_info">30분 전</p>
+              </div>
+
+              <!-- 대댓글 -->
+              <div class="artc_comments_comment">
+                <div class="artc_comment_container">
+                  <div class="artc_comment_top">
+                    <div class="artc_comment_profile">
+                      <div class="imgBox_comment_profile">
+                        <img
+                          class="img_comment_profile"
+                          src="./img/anonymous.profile.png"
+                          alt="이미지"
+                        />
+                      </div>
+                      <h4>익명(글쓴이)</h4>
+                    </div>
+                    <div class="artc_comment_right">
+                      <button>공감</button>
+                      <button>쪽지</button>
+                      <button>신고</button>
+                    </div>
+                  </div>
+                  <p>스터디 파이팅</p>
+                  <p class="text_info">30분 전</p>
+                </div>
+              </div>
+
+              <!-- write comment -->
+              <div
+                class="artc_writing comments_comment_writing"
+                style="display: none"
+              >
+                <div>
+                  <input
+                    class="input_write_comment"
+                    type="text"
+                    placeholder="댓글을 입력하세요."
+                  />
+                  <button id="comment_anonymity">
+                    <input type="checkbox" id="comment_anonymity_check" />
+                    <label for="comment_anonymity_check">익명</label>
+                  </button>
+                  <input class="img_writing_button" type="submit" value="" />
+                </div>
               </div>
             </div>
             <!-- comment02 -->
@@ -291,7 +335,7 @@
                     <h4>익명2</h4>
                   </div>
                   <div class="artc_comment_right">
-                    <button id="comments_comment">대댓글</button>
+                    <button class="comments_comment">대댓글</button>
                     <button>공감</button>
                     <button>쪽지</button>
                     <button>신고</button>
@@ -299,6 +343,25 @@
                 </div>
                 <p>와우</p>
                 <p class="text_info">방금</p>
+              </div>
+
+              <!-- write comment -->
+              <div
+                class="artc_writing comments_comment_writing"
+                style="display: none"
+              >
+                <div>
+                  <input
+                    class="input_write_comment"
+                    type="text"
+                    placeholder="댓글을 입력하세요."
+                  />
+                  <button id="comment_anonymity">
+                    <input type="checkbox" id="comment_anonymity_check" />
+                    <label for="comment_anonymity_check">익명</label>
+                  </button>
+                  <input class="img_writing_button" type="submit" value="" />
+                </div>
               </div>
             </div>
             <!-- write comment -->
