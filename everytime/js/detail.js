@@ -36,22 +36,24 @@ function articleScrabClicked() {
 }
 
 // 익명
-const commentAnonymity = document.querySelector("#comment_anonymity");
+const commentAnonymity = document.querySelectorAll("button#comment_anonymity");
 
-let isAnonymous = false;
+commentAnonymity.forEach((checkBox) => {
+  let isAnonymous = false;
 
-document
-  .querySelector("#comment_anonymity_check")
-  .addEventListener("click", onOffAnonymity);
+  checkBox
+    .querySelector("#comment_anonymity_check")
+    .addEventListener("click", onOffAnonymity);
 
-function onOffAnonymity() {
-  if (isAnonymous) {
-    commentAnonymity.classList.remove("text-red");
-  } else {
-    commentAnonymity.classList.add("text-red");
+  function onOffAnonymity() {
+    if (isAnonymous) {
+      checkBox.classList.remove("text-red");
+    } else {
+      checkBox.classList.add("text-red");
+    }
+    isAnonymous = !isAnonymous;
   }
-  isAnonymous = !isAnonymous;
-}
+});
 
 // 대댓글
 const commentsCommentBTN = document.querySelectorAll(".comments_comment");
