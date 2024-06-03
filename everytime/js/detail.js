@@ -41,8 +41,12 @@ const commentAnonymity = document.querySelectorAll("button#comment_anonymity");
 commentAnonymity.forEach((checkBox) => {
   let isAnonymous = false;
 
+  checkBox.closest("form").addEventListener("submit", (event) => {
+    event.preventDefault();
+  });
+
   checkBox
-    .querySelector("#comment_anonymity_check")
+    .querySelector(".comment_anonymity_check")
     .addEventListener("click", onOffAnonymity);
 
   function onOffAnonymity() {

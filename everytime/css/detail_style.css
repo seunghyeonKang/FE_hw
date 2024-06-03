@@ -585,7 +585,7 @@ div.artc {
   font-weight: 600;
 }
 
-#comment_anonymity_check:checked {
+.comment_anonymity_check:checked {
   accent-color: #f91f15;
 }
 
