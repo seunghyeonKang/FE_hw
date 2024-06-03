@@ -72,13 +72,17 @@ commentsCommentBTN.forEach((button) => {
 });
 
 // 댓글 작성
-const commentSubmit = document.querySelectorAll(".img_writing_button");
+const commentSubmit = document.querySelectorAll("button.img_writing_button");
 
 commentSubmit.forEach((button) => {
-  button.addEventListener("click", () => {
-    const parentArtc = button.closest(".artc_writing");
-    const commentContent = parentArtc.querySelector(".input_write_comment");
-    alert(commentContent.Value);
-    console.log(commentContent);
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const parentArtc = button.closest("form.artc_writing");
+    const commentInput = parentArtc.querySelector("input.input_write_comment");
+    if (commentInput.value.trim() !== "") {
+      alert(commentInput.value.trim());
+      commentInput.value = "";
+    }
   });
 });

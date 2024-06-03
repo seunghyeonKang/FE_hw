@@ -666,7 +666,7 @@ div.artc {
 
   background-color: #f8f8f8;
 }
-.artc input.img_writing_button {
+.artc button.img_writing_button {
   background-image: url("../img/container.articles.write.submit.png");
   background-size: cover;
   background-position: center center;
