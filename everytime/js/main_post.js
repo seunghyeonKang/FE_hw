@@ -8,6 +8,10 @@ writingBTN.addEventListener("click", () => {
   writingBTN.style.display = "none";
 });
 
+document.querySelector("input#question").addEventListener("click", () => {
+  // 으악 으악 으악 질문 컴포넌트 추가~~
+});
+
 // 보안 문제
 /*
 fetch("post.html")
