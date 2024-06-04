@@ -459,6 +459,7 @@ div.sub_menus_right {
   box-sizing: border-box;
   width: 776px;
   height: 380px;
+  /* height: 304px; */
   padding: 16px;
 
   font-size: 0.9rem;
@@ -468,6 +469,26 @@ div.sub_menus_right {
   outline: none;
 
   resize: none;
+}
+.question_alarm {
+  box-sizing: border-box;
+  width: 736px;
+  height: 60px;
+
+  margin: 8px 20px;
+  padding: 12px;
+
+  border-radius: 12px;
+  border: none;
+  background: #f2fefe;
+}
+.question_alarm p {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: #79bbbd;
 }
 .input_writing_submit {
   box-sizing: border-box;

@@ -1,7 +1,10 @@
 const writingBTN = document.querySelector("section#loadPostButton");
 const postToWrite = document.querySelector("section#postContainer");
+const questionAlarm = document.querySelector("div.question_alarm");
+let isquestion = false;
 
 postToWrite.style.display = "none";
+questionAlarm.style.display = "none";
 
 writingBTN.addEventListener("click", () => {
   postToWrite.style.display = "block";
@@ -9,7 +12,17 @@ writingBTN.addEventListener("click", () => {
 });
 
 document.querySelector("input#question").addEventListener("click", () => {
-  // 으악 으악 으악 질문 컴포넌트 추가~~
+  if (isquestion) {
+    questionAlarm.style.display = "none";
+    document.querySelector("textarea.input_writing_content").style.height =
+      "380px";
+  } else {
+    questionAlarm.style.display = "block";
+    document.querySelector("textarea.input_writing_content").style.height =
+      "304px";
+  }
+
+  isquestion = !isquestion;
 });
 
 // 보안 문제
