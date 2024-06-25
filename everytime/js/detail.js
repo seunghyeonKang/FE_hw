@@ -35,28 +35,60 @@ function articleScrabClicked() {
   isScrabed = !isScrabed;
 }
 
-// 대댓글
-const commentsComment = document.getElementById("comments_comment");
-commentsComment.addEventListener("click", () => {
-  console.log("대댓 클릭");
+// 익명
+const commentAnonymity = document.querySelectorAll("button#comment_anonymity");
+
+commentAnonymity.forEach((checkBox) => {
+  let isAnonymous = false;
+
+  checkBox.closest("form").addEventListener("submit", (event) => {
+    event.preventDefault();
+  });
+
+  checkBox
+    .querySelector(".comment_anonymity_check")
+    .addEventListener("click", onOffAnonymity);
+
+  function onOffAnonymity() {
+    if (isAnonymous) {
+      checkBox.classList.remove("text-red");
+    } else {
+      checkBox.classList.add("text-red");
+    }
+    isAnonymous = !isAnonymous;
+  }
 });
 
-// 익명
-const commentAnonymity = document.querySelector("#comment_anonymity");
+// 대댓글
+const commentsCommentBTN = document.querySelectorAll(".comments_comment");
 
-let isAnonymous = false;
+commentsCommentBTN.forEach((button) => {
+  button.addEventListener("click", () => {
+    const parentArtc = button.closest(".artc");
+    const commentsCommentWrite = parentArtc.querySelector(
+      ".comments_comment_writing"
+    );
 
-document
-  .querySelector("#comment_anonymity_check")
-  .addEventListener("click", onOffAnonymity);
-
-function onOffAnonymity() {
-  if (isAnonymous) {
-    commentAnonymity.classList.remove("text-red");
-  } else {
-    commentAnonymity.classList.add("text-red");
-  }
-  isAnonymous = !isAnonymous;
-}
+    if (commentsCommentWrite.style.display == "block") {
+      commentsCommentWrite.style.display = "none";
+    } else {
+      commentsCommentWrite.style.display = "block";
+    }
+  });
+});
 
 // 댓글 작성
+const commentSubmit = document.querySelectorAll("button.img_writing_button");
+
+commentSubmit.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const parentArtc = button.closest("form.artc_writing");
+    const commentInput = parentArtc.querySelector("input.input_write_comment");
+    if (commentInput.value.trim() !== "") {
+      alert(commentInput.value.trim());
+      commentInput.value = "";
+    }
+  });
+});
