@@ -1,9 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/signup_style.css" />
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}" />
     <title>에브리타임</title>
   </head>
   <body>
@@ -18,10 +20,13 @@
         </p>
         <!-- form -->
         <form>
+          {% csrf_token %}
           <div class="box_margin">
             <p class="input_name_text">이름</p>
+            <!-- formName -->
             <input
-              id="formName"
+              id="id_username
+              "
               class="input_box input_text input_box_color"
               type="text"
               placeholder="이름을 입력하세요."
@@ -29,8 +34,9 @@
           </div>
           <div class="box_margin">
             <p class="input_name_text">닉네임</p>
+            <!-- formNickname -->
             <input
-              id="formNickname"
+              id="id_nickname"
               class="input_box input_text input_box_color"
               type="text"
               placeholder="닉네임을 입력하세요."
@@ -38,8 +44,9 @@
           </div>
           <div class="box_margin">
             <p class="input_name_text">이메일</p>
+            <!-- formEmail -->
             <input
-              id="formEmail"
+              id="id_email"
               class="input_box input_text input_box_color"
               type="text"
               placeholder="이메일을 입력하세요."
@@ -47,8 +54,9 @@
           </div>
           <div class="box_margin">
             <p class="input_name_text">비밀번호</p>
+            <!-- formPassword -->
             <input
-              id="formPassword"
+              id="id_password1"
               class="input_box input_text input_box_color"
               type="password"
               placeholder="숫자/문자 조합, 최소 8자 이상"
@@ -56,25 +64,34 @@
           </div>
           <div class="box_margin">
             <p class="input_name_text">비밀번호 재입력</p>
+            <!-- formRePassword -->
             <input
-              id="formRePassword"
+              id="id_password2"
               class="input_box input_text input_box_color"
               type="password"
               placeholder="비밀번호를 재입력하세요."
             />
           </div>
           <div class="box_margin">
-            <input
+            <!-- formSubmit -->
+            <button
+              id="formSubmit"
+              class="input_box input_button_text input_button_color"
+              type="submit"
+            >
+              회원가입
+            </button>
+            <!-- <input
               id="formSubmit"
               class="input_box input_button_text input_button_color"
               type="submit"
               value="회원가입"
-            />
+            /> -->
           </div>
         </form>
       </div>
     </div>
 
-    <script src="./js/signup.js"></script>
+    <script src="{% static 'js/signup.js' %}"></script>
   </body>
 </html>
