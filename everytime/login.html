@@ -1,3 +1,5 @@
+<!-- 연동 완 -->
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -20,9 +22,19 @@
         <form>
           {% csrf_token %}
           <!-- {{ form.as_p }} -->
-          <input id="id_username" class="input_box input_text input_box_color" type="text" placeholder="아이디" />
+          <input
+            id="id_username"
+            class="input_box input_text input_box_color"
+            type="text"
+            placeholder="아이디"
+          />
           <!-- form_id -->
-          <input id="id_password" class="input_box input_text input_box_color" type="password" placeholder="비밀번호" />
+          <input
+            id="id_password"
+            class="input_box input_text input_box_color"
+            type="password"
+            placeholder="비밀번호"
+          />
           <!-- form_password -->
           <input
             id="form_submit"
@@ -34,7 +46,9 @@
       </div>
       <!-- signup -->
       <div class="box_evenly">
-        <p class="text_signup"><a href="{% url 'accounts:signup' %}">회원가입</a></p>
+        <p class="text_signup">
+          <a href="{% url 'accounts:signup' %}">회원가입</a>
+        </p>
       </div>
       <!-- footer -->
       <div class="box_center">

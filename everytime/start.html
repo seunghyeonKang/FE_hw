@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>시작 - 에브리타임</title>
+    <link rel="stylesheet" href="{% static 'css/start.css' %}" />
+  </head>
+  <body>
+    <div class="intro">
+      <div class="btnSpace">
+        <a href="{% url 'post:home' %}">
+          <div class="btnLogo">
+            <img src="{% static 'img/logo.png' %}" alt="에브리타임 로고" />
+          </div>
+        </a>
+        <div class="btnS">
+          {% if request.user.is_authenticated %}
+          <a href="{% url 'accounts:mypage' %}">
+            <button class="loginBtn">마이페이지</button>
+          </a>
+
+          <button class="signupBtn">{% include "post/menu.html" %}</button>
+          <a href="{% url 'accounts:write_list' %}">
+            <button class="toMainBtn">내가 작성한 글</button>
+          </a>
+          <a href="{% url 'accounts:scrap_list' %}">
+            <button class="toMainBtn">내가 스크랩한 글</button>
+          </a>
+
+          {% else %}
+          <a href="{% url 'accounts:login' %}">
+            <button class="loginBtn">로그인</button>
+          </a>
+          <a href="{% url 'accounts:signup' %}">
+            <button class="signupBtn">에브리타임 회원가입</button>
+          </a>
+          <button class="signupBtn">{% include "post/menu.html" %}</button>
+          {% endif %}
+        </div>
+      </div>
+      <div class="contentSpace">
+        <img src="{% static 'img/start_img.png' %}" alt="대문 이미지" />
+      </div>
+    </div>
+  </body>
+</html>
